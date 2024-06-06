@@ -162,20 +162,14 @@ public class Main {
     }
 
     private static void printFirstNFibonacciNumbers(int n) {
-        if (n <= 0) {
-            return;
-        }
-        int i = 0;
-        int j = 1;
+        int first = 0;
+        int second = 1;
 
-        System.out.print(i + " " + j + " ");
-        n -= 2;
-        while (n > 0) {
-            int sum = i + j;
-            System.out.print(sum + " ");
-            i = j;
-            j = sum;
-            n--;
+        for (int i = 0; i < n; i++) {
+            System.out.print(first + " ");
+            int sum = first + second;
+            first = second;
+            second = sum;
         }
         System.out.println();
     }
