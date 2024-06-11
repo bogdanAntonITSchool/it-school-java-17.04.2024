@@ -1,0 +1,5 @@
+1. Suma elementelor de pe diagonala principala si cea secundara;
+2. Verificarea daca un array este monotonic (daca elementele sale sunt fie in ordine crescatoare, sau descrescatoare);
+3. Gasirea celui mai lung cuvant intr-un sir de caractere;
+4. Eliminarea caracterelor duplicate dintr-un sir de caractere;
+5. Continuarea exercitiului din clasa cu Circle si Rectangle. Problema era cu o clasa abstracta Shape, iar in main sa putem observa ce printeaza metodele in functie de tipul instantei.
