@@ -1,0 +1,15 @@
+1. Create two classes called Circle and Rectangle which extend a Shape abstract class.
+Shape abstract class has a method called draw() which is implemented by Circle and Rectangle classes.
+The draw method in Circle class should print “Drawing Circle” and draw method in Rectangle class should print “Drawing Rectangle”.
+Please write a program to create a Shape list which can hold Circle and Rectangle objects, then iterate through the list and call draw method on each object.
+
+2. Create a class Car with the following properties: String brand; String model; int year; double price.
+Adapt the Car class to be able to add only unique cars in a HashSet.
+The rules for equality are the following: two cars are equal if they have the same brand, model and year.
+
+3. Create c class Runner with the following properties: String name; int age; int speed.
+Adapt the Runner class to be able to add only unique runners in a TreeSet, ordered by speed.
+
+4. Create a class called Person with the following properties: String name; int age; String job.
+Create multiple instances of type Person and add them to a Map (the key can be an integer).
+Please iterate over the map and print the name of each person.
