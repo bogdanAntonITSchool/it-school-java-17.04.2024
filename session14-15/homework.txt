@@ -1,0 +1,13 @@
+1. Design an interface Machine that includes methods print(), scan(), and fax(). Create classes Printer, Scanner, and FaxMachine that implement this interface. Refactor the design to follow the Interface Segregation Principle.
+2. Create a superclass Bird with a method fly(). Then, create subclasses Sparrow and Penguin. Demonstrate a violation of the Liskov Substitution Principle and refactor the design to comply with LSP.
+3. Create a class Shape with methods draw() and resize(). Create subclasses Circle, Square, and Triangle. Demonstrate a violation of the Open/Closed Principle and refactor the design to comply with OCP.
+4. Create a generic method that takes an array of numbers and returns the maximum value. Use bounded type parameters to ensure the method works with any subclass of Number
+5. Create a generic class Pair that holds two objects of different types. Implement methods to get and set the values of these objects.
+6. Create a utility class with a generic method swap that swaps two elements in an array. Ensure the method can work with any type of array.
+7. Create a method printShapes that takes a list of elements that extend a Shape class and calls the draw() method on each element.
+8. Create a generic class Triple that can hold three objects of any types. Implement methods to get and set the values of these objects.
+9. Define an enum TrafficLight with constants RED, YELLOW, and GREEN. Write a method that takes a TrafficLight value and returns the duration for which the light stays on.
+10. Create an enum Season with constants WINTER, SPRING, SUMMER, and FALL. Add a field for average temperature and a method to get the average temperature for each season.
+11. Define an enum Operation with constants ADD, SUBTRACT, MULTIPLY, and DIVIDE. Implement an abstract method apply in the enum that performs the respective operation on two operands.
+12. Create an enum Day with constants for all days of the week. Use EnumSet to create a set of weekdays and a set of weekends. Write a method that prints the days in each set.
+13. Define an enum Level with constants LOW, MEDIUM, HIGH. Use EnumMap to map each level to a specific action (e.g., LOW -> "Low action"). Write a method that prints the action for each level.

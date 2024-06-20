@@ -1,6 +1,8 @@
+package exercises.collections.student;
+
 import java.util.Comparator;
 
-// The StudentComparator class implements the Comparator interface
+// The exercises.collections.student.StudentComparator class implements the Comparator interface
 public class StudentComparator implements Comparator<Student> {
 
     // 0 - both elements are equal

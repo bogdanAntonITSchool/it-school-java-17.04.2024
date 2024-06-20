@@ -1,3 +1,5 @@
+package exercises.collections.student;
+
 import java.util.*;
 
 public class Main {
@@ -22,8 +24,8 @@ public class Main {
         System.out.println(studentSet);
 
         Comparator<Student> comparator = new StudentComparator();
-//        Set<Student> studentTreeSet = new TreeSet<>(comparator);
-        // For the TreeSet without Comparator to work, the Student class must implement the Comparable interface
+//        Set<exercises.collections.student.Student> studentTreeSet = new TreeSet<>(comparator);
+        // For the TreeSet without Comparator to work, the exercises.collections.student.Student class must implement the Comparable interface
         Set<Student> studentTreeSet = new TreeSet<>();
 
         studentTreeSet.add(student1);

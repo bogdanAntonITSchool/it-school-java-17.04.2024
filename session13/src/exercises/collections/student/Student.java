@@ -1,3 +1,5 @@
+package exercises.collections.student;
+
 public class Student implements Comparable<Student> {
     private int age;
     private String name;
@@ -27,7 +29,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "exercises.collections.student.Student{" +
                 "age=" + age +
                 ", name='" + name + '\'' +
                 '}';
