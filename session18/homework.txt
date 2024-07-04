@@ -1,0 +1,13 @@
+1. Create a Runnable that prints "Hello, World!" using a lambda expression.
+2. Create a Comparator<String> using a lambda expression that compares strings based on their length.
+3. Create a Function<String, Integer> using a lambda expression that takes a string and returns its length.
+4. Create a BiPredicate<String, String> using a lambda expression that tests whether the first string is longer than the second string.
+5. Create a UnaryOperator<Integer> using a lambda expression that squares an integer.
+6. Create a BinaryOperator<Integer> using a lambda expression that adds two integers.
+7. Given a list of strings, use a lambda expression to sort the list in reverse alphabetical order.
+
+1. Given a list of strings, write a stream pipeline that converts all the strings to uppercase and collects them into a new list.
+2. Given a list of integers, write a stream pipeline that filters out the even numbers and then squares the remaining numbers.
+3. Given a list of integers, write a stream pipeline that finds the maximum value.
+4. Given a list of integers, write a stream pipeline that calculates the sum of all the integers.
+5. Given a list of integers, write a stream pipeline that removes duplicates and collects the unique integers into a list.
