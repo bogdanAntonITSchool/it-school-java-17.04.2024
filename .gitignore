@@ -91,3 +91,4 @@ nb-configuration.xml
 
 mvnw*
 .gitignore
+.mvn
