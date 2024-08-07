@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ro.itschool.testcontroller.controller.dto.UserDto;
+import ro.itschool.testcontroller.controller.payload.ResponsePayload;
 import ro.itschool.testcontroller.service.UserService;
 
 import java.util.List;
@@ -28,13 +29,8 @@ public class UserController {
     @GetMapping("/{id}")
     public ResponseEntity<ResponsePayload<UserDto>> getUserById(@PathVariable long id) {
         UserDto userDto = userService.getUserById(id);
-        if (userDto != null) {
-            return ResponseEntity.status(HttpStatus.OK)
-                    .body(new ResponsePayload<>(userDto, "User found"));
-        } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body(new ResponsePayload<>(null, "User not found"));
-        }
+        return ResponseEntity.status(HttpStatus.OK)
+                    .body(new ResponsePayload<>(userDto, "User found for id: " + id));
     }
 
     // http://localhost:8080/api/v1/users/[orice]/[orice]

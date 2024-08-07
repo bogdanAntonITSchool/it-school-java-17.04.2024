@@ -2,6 +2,7 @@ package ro.itschool.testcontroller.service;
 
 import org.springframework.stereotype.Service;
 import ro.itschool.testcontroller.controller.dto.UserDto;
+import ro.itschool.testcontroller.exceptions.UserNotFoundException;
 import ro.itschool.testcontroller.persistence.dao.User;
 import ro.itschool.testcontroller.persistence.repository.UserRepository;
 
@@ -46,12 +47,9 @@ public class UserService {
 
     public UserDto getUserById(long id) {
 //        return users.get(id);
-        Optional<User> optionalUser = userRepository.findById(id);
-        if (optionalUser.isEmpty()) {
-            return null;
-        }
+        User user =
+                userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found for id: " + id));
 
-        User user = optionalUser.get();
         return UserDto.builder()
                 .address(user.getAddress())
                 .age(user.getAge())

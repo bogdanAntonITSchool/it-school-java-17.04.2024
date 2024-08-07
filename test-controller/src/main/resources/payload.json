@@ -8,3 +8,10 @@
 POST --> FACE MEREU O ENTITATE NOUA
 PUT --> FACE UPDATE LA O ENTITATE EXISTENTA SAU CREEAZA UNA NOUA DACA NU EXISTA
 PATCH --> FACE UPDATE LA O ENTITATE EXISTENTA
+
+
+
+v0.0.1 -> first patch version
+v0.0.2 -> second patch version
+v0.1.0 -> first minor version
+v1.0.0 -> first major version
